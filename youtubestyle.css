@@ -1,0 +1,248 @@
+body {
+    margin: 0;
+    padding-top: 80px;
+    padding-left: 80px;
+    background-color: #f9f9f9;
+}
+
+.header {
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white; 
+    border-bottom-style: solid;
+    border-bottom-color: rgb(228, 228, 228);
+    z-index: 1000; 
+}
+
+
+.left-section, .right-section, .middle-section {
+    display: flex;
+    align-items: center;
+}
+
+.left-section {
+    width: 150px;
+    margin-left: 15px;
+}
+
+.middle-section {
+    flex: 1;
+    margin: 0 35px;
+    max-width: 500px;
+}
+
+.right-section {
+    width: 200px;
+    margin-right: 18px;
+    flex-shrink: 0;
+    justify-content: space-between;
+}
+
+.searchbox {
+    height: 36px;
+    flex: 1;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid rgb(192,192,192);
+    box-shadow: inset 1px 2px 5px rgba(0,0,0,0.05);
+    transition: width 0.3s ease;
+}
+
+.search-button, .voice-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button {
+    height: 39px;
+    width: 66px;
+    margin-left: -1px;
+    background-color: rgb(240,240,240);
+    border: 1px solid rgb(192,192,192);
+}
+
+.voice-button {
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+}
+
+.thumbnail {
+    width: 100%;
+    margin-bottom: 7px;
+}
+
+.time {
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 15px;
+    right: 5px;
+    padding: 4px;
+    font-family: Arial;
+    border-radius: 2px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.thumbnails {
+    position: relative;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 20px;
+}
+
+.video-title {
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 15px;
+    margin: 0 0 12px;
+}
+
+.video-author, .video-history {
+    font-family: Arial;
+    font-size: 13px;
+    color: gray;
+    margin: 0;
+}
+
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 8px;
+}
+
+.video-info {
+    margin-left: 5px;
+}
+
+.pfp .profile-picture {
+    width: 42px;
+    border-radius: 50%;
+}
+
+.sidebar {
+    position: fixed;
+    color: black;
+    background-color: white;
+    left: 0;
+    top: 65px;
+    width: 72px;
+    height: calc(100vh - 65px);
+}
+
+.menu-icon{
+    height: 26px;
+    margin-right: 20px;
+}
+.youtube-icon{
+    height: 20px;
+}
+.search-button{
+    height: 39px;
+    width: 66px;
+    display: flex;
+    margin-left: -1px;
+    background-color: rgb(240,240,240);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192,192,192);
+    margin-right: 9px;
+}
+.voice-button{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+}
+.searchimg{
+    height: 25px;
+    margin-top: 4px;
+    margin-left: 2px;
+}
+.voiceimg{
+    height: 25px;
+    margin-top: 2px;
+    margin-left: -1px;
+}
+.upload{
+    height: 30px;
+}
+.apps{
+    height: 30px;
+}
+.notification{
+    height: 30px;
+    position: relative;
+}
+.myacc{
+    height: 30px;
+}
+.sidebar{
+    position: fixed;
+    color: black;
+    background-color: white;
+    left: 0;
+    bottom: 0;
+    top: 65;
+    width: 85px;
+}
+.time{
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 15px;
+    right: 5px;
+    padding: 4px;
+    font-family: Arial;
+    border-radius: 2px;
+    font-weight: 700;
+    font-size: 12px;
+}
+.thumbnails{
+    position: relative;
+}
+.noti{
+    position: relative;
+}
+.notification-number{
+    position: absolute;
+    font-family: Arial;
+    font-size: smaller;
+    background-color: rgb(200,0,0);
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 50%;
+    color: white;
+    top: 0;
+    right: 0;
+}
+.Sidebarlink{
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.Sidebarlink:hover{
+    background-color: rgb(235, 235, 235);
+    cursor: pointer;
+}
+.Sidebarlink img{
+    height: 24px;
+}
+.Sidebarlink div{
+    font-family: Arial;
+    font-size: 12px;
+}
